@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>我的画板</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="main">
+        <h1>我的画板</h1>
+        <canvas id="canvas" class="canvas">您的浏览器不支持canvas</canvas>
+        <ul class="controller">
+            <li id="draw" class="draw active" title="绘图">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-pencil"></use>
+                </svg>
+            </li>
+            <li id="eraser" class="eraser" title="橡皮擦">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-eraser"></use>
+                </svg>
+            </li>
+            <li id="clear" class="clear" title="清屏">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-clear"></use>
+                </svg>
+            </li>
+            <li id='save' class="save" title="保存图片">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-save"></use>
+                </svg>
+            </li>
+        </ul>
+        <ul class="color" title="colorPanel">
+            <li>色板</li>
+            <li title='black' id="black" class="active"><span class="black"></span></li>
+            <li title='red' id="red"><span class="red"></span></li>
+            <li title='blue' id="blue"><span class="blue"></span></li>
+            <li title='yellow' id='yellow'><span class="yellow"></span></li>
+        </ul>
+        <ul class="lineWidth" title="lineWidth" id="lineWidth">
+            <li>线宽</li>
+            <li title='3px' id="three" class="line-active"><span class="three"></span></li>
+            <li title='6px'  id="six"><span class="six" ></span></li>
+            <li title='10px' id="ten"><span class="ten"  ></span></li>
+            <li title='15px' id='fifteen'><span class="fifteen" ></span></li>
+        </ul>
+    </div>
+    <script src="main.js"></script>
+    <script src="//at.alicdn.com/t/font_1715028_2bl7kumtca4.js"></script>
+</body>
+</html>

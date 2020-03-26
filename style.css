@@ -1,0 +1,155 @@
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-touch-callout: none;
+/*系统默认菜单被禁用*/
+  -webkit-user-select: none;
+/*webkit浏览器*/
+  -khtml-user-select: none;
+/*早期浏览器*/
+  -moz-user-select: none;
+/*火狐*/
+  -ms-user-select: none;
+/*IE10*/
+  user-select: none;
+}
+ul>li,
+ol>li {
+  list-style: none;
+}
+body {
+  overflow: hidden;
+}
+.main h1 {
+  font-size: 16px;
+  position: fixed;
+  top: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 3px 0px #afa5a5;
+  border: 1px solid #afa5a5;
+  padding: 2px 20px;
+}
+.main>canvas {
+  border: 1px solid #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.main .controller {
+  position: fixed;
+  z-index: 100;
+  left: 80px;
+  top: 34px;
+  padding: 8px;
+  box-shadow: 0 0 3px 0px #afa5a5;
+  border: 1px solid #afa5a5;
+  text-align: center;
+}
+.main .controller .active {
+  transform: scale(1.2);
+}
+.main .controller .active svg {
+  fill: #f00;
+}
+.main .controller li {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  padding: 6px;
+  line-height: 1;
+  border-radius: 50%;
+  transition: all 0.2s linear;
+}
+.main .controller li svg {
+  vertical-align: top;
+  fill: #000;
+  width: 20px;
+  height: 20px;
+}
+.main .controller li.save:hover {
+  transform: scale(1.2);
+}
+.main .controller li.save:hover svg {
+  fill: #f00;
+}
+.main .color {
+  position: fixed;
+  z-index: 100;
+  left: 10px;
+  top: 34px;
+  text-align: center;
+  box-shadow: 0 0 3px 0px #afa5a5;
+  border: 1px solid #afa5a5;
+}
+.main .color .active {
+  transform: scale(1.2);
+}
+.main .color li {
+  margin: 5px;
+  padding: 6px;
+  transition: all 0.2s linear;
+}
+.main .color li span {
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 5px;
+}
+.main .color li .red {
+  background-color: #f00;
+}
+.main .color li .blue {
+  background-color: #00f;
+}
+.main .color li .yellow {
+  background-color: #ff0;
+}
+.main .color li .black {
+  background-color: #000;
+}
+.main .lineWidth {
+  position: fixed;
+  z-index: 100;
+  right: 10px;
+  top: 34px;
+  text-align: center;
+  box-shadow: 0 0 3px 0px #afa5a5;
+  border: 1px solid #afa5a5;
+}
+.main .lineWidth .line-active {
+  transform: scaleX(1.2);
+}
+.main .lineWidth li {
+  transition: all 0.2s linear;
+  margin: 6px;
+  line-height: 0.8;
+  padding: 10px;
+}
+.main .lineWidth li span {
+  display: inline-block;
+  background-color: #000;
+  width: 30px;
+  vertical-align: middle;
+}
+.main .lineWidth li .three {
+  height: 3px;
+}
+.main .lineWidth li .six {
+  height: 6px;
+}
+.main .lineWidth li .ten {
+  height: 10px;
+}
+.main .lineWidth li .fifteen {
+  height: 15px;
+}
